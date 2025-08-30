@@ -1,0 +1,83 @@
+:root {
+  --bg-color: #1e1e2f;    /* negro azulado suave */
+  --card-bg: #2a2a40;     /* gris oscuro */
+  --text-color: #f5f5f5;  /* texto claro */
+  --accent: #4f9dff;      /* azul acento */
+  --danger: #ff5c5c;
+  --success: #4effa0;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.container {
+  max-width: 720px;
+  margin: 32px auto;
+  padding: 16px;
+}
+
+form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+button {
+  background: var(--accent);
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+}
+button:hover {
+  opacity: 0.9;
+}
+
+ul {
+  display: grid;
+  gap: 12px;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  background: var(--card-bg);
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+select {
+  background: var(--bg-color);
+  border: 1px solid var(--accent);
+  color: var(--text-color);
+  padding: 6px;
+  border-radius: 4px;
+}
+
+button.delete {
+  background: var(--danger);
+}
